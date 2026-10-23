@@ -1,0 +1,34 @@
+# 课程要求 / Требования занятия
+.venv/
+site/
+docs/_build/
+**/bin/
+**/obj/
+TestResults/
+*.log
+.env
+.DS_Store
+Thumbs.db
+
+# 项目补充规则 / Дополнительные правила проекта
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+private/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+_build/
+build/
+.idea/
+.vscode/
+*.sqlite3
+*.db
+*.tmp
+~$*
+.pytest_cache/
+__pycache__/
+*.py[cod]
