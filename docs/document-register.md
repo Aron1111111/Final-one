@@ -13,5 +13,9 @@
 | 检查结果 / Результаты проверок | [verification.md](verification.md) |
 | 审查清单 / Чек-лист ревью | [review-checklist.md](review-checklist.md) |
 | 材料来源 / Источники | [SOURCES.md](../SOURCES.md) |
+| 课程报告 / Отчёт | [REPORT.md](../REPORT.md) |
+| HTTP 服务 / HTTP-сервер | [web_app.py](../bookclub/web_app.py) |
+| 俄语网页 / Русская веб-страница | [index.html](../web/index.html)、[app.js](../web/app.js)、[styles.css](../web/styles.css) |
+| HTTP 接口测试 / Тесты HTTP | [test_web_app.py](../tests/test_web_app.py) |
 
 [返回目录 / Содержание](../README.md)
