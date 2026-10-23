@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookClub — Книжный клуб</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Главная страница BookClub">
+      <span class="brand-mark">B</span>
+      <span>BookClub</span>
+    </a>
+    <div class="role-switch" aria-label="Демонстрационная роль">
+      <button class="role active" data-role="member">Участник <small>читатель</small></button>
+      <button class="role" data-role="organizer">Организатор <small>управление</small></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Локальная демонстрация</p>
+        <h1>Новая хорошая книга<br>начинается со встречи.</h1>
+        <p class="hero-copy">Посмотрите ближайшие встречи, запишитесь как участник или переключитесь в режим организатора и управляйте статусами.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#meetings">Смотреть встречи</a>
+          <span id="connection" class="connection">Подключение к локальному сервису…</span>
+        </div>
+      </div>
+      <div class="book-stack" aria-hidden="true">
+        <div class="book book-one"><span>Читать</span></div>
+        <div class="book book-two"><span>Обсуждать</span></div>
+        <div class="book book-three"><span>Открывать</span></div>
+      </div>
+    </section>
+
+    <section id="meetings" class="meetings-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Ближайшие встречи</p>
+          <h2>Найдите своих читателей</h2>
+        </div>
+        <button id="refresh" class="text-button">Обновить список ↻</button>
+      </div>
+      <div id="meeting-list" class="meeting-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="about">
+      <p class="eyebrow">Об этой версии</p>
+      <h2>Настоящие правила. Лёгкий запуск.</h2>
+      <p>Страница использует три операции из OpenAPI проекта и существующую логику переходов статуса. Данные хранятся только в памяти и сбрасываются после перезапуска сервиса.</p>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
